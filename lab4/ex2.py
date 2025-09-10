@@ -1,15 +1,7 @@
 rows = 7
 cols = 7
-array = []
 
-for i in range(rows):
-    row = []
-    for j in range(cols):
-        if j % 2 == 0:
-            row.append(1)
-        else:
-            row.append(0)
-    array.append(row)
+a = [[1 if j % 2 == 0 else 0 for j in range(cols)] for i in range(rows)]
 
-for row in array:
-    print(row)
+for r in a:
+    print(*r)

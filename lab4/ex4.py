@@ -1,8 +1,12 @@
 def sum_list_elements(lst):
     return sum(lst)
 
-user_input = input("Введіть числа списку через пробіл: ")
-my_list = [int(x) for x in user_input.split()]
-total = sum_list_elements(my_list)
+user_input = input("Введіть числа списку через пробіл: ").split()
 
-print("Сума елементів списку:", total)
+# перевірка на букви
+if all(x.lstrip('-').isdigit() for x in user_input):  # підтримка від’ємних чисел
+    my_list = [int(x) for x in user_input]
+    total = sum_list_elements(my_list)
+    print("Сума елементів списку:", total)
+else:
+    print("Помилка: введено не число!")
