@@ -1,8 +1,8 @@
 N = int(input("Enter N: "))
 if 1 <= N <= 9:
-    for i in range(N, 0, -1):
-        print("  " * (i - 1), end="")
-        for j in range(i, N + 1):
+    for i in range(1, N + 1):
+        print("  " * (N - i), end="")
+        for j in range(N, N - i, -1):
             print(j, end=" ")
         print()
 else:
