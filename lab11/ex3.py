@@ -5,7 +5,6 @@ import string
 import matplotlib.pyplot as plt
 from collections import Counter
 
-# --- завантаження ресурсів NLTK ---
 nltk.download('punkt', quiet=True)
 nltk.download('punkt_tab', quiet=True)
 nltk.download('gutenberg', quiet=True)
@@ -15,6 +14,9 @@ nltk.download('stopwords', quiet=True)
 text = gutenberg.raw('chesterton-thursday.txt')
 tokens = word_tokenize(text)
 words = [w.lower() for w in tokens]
+
+# --- (нове) Підрахунок кількості слів ---
+print("Кількість слів у тексті:", len(words))
 
 # --- 2. ТОП-10 до очищення ---
 freq_raw = Counter(words)
@@ -33,12 +35,7 @@ plt.show()
 
 # --- 3. Очищення тексту ---
 stop_words = set(stopwords.words('english'))
-punct = set(string.punctuation)
-
-clean_words = [
-    w for w in words
-    if w.isalpha() and w not in stop_words
-]
+clean_words = [w for w in words if w.isalpha() and w not in stop_words]
 
 # --- 4. ТОП-10 після очищення ---
 freq_clean = Counter(clean_words)
