@@ -1,0 +1,23 @@
+{
+    "task_description": "Середня вартість журналів, тираж яких менше 10000 примірників.",
+    "threshold": 10000,
+    "filtered_count": 3,
+    "average_cost": 108.33,
+    "magazines_included": [
+        {
+            "title": "IT-Огляд",
+            "price": 95.0,
+            "circulation": 8500
+        },
+        {
+            "title": "Економіст",
+            "price": 150.0,
+            "circulation": 9900
+        },
+        {
+            "title": "Мандрівник",
+            "price": 80.0,
+            "circulation": 5000
+        }
+    ]
+}
