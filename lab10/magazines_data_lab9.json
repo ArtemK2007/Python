@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Наука та Життя",
+        "price": 120.5,
+        "circulation": 15000,
+        "year": 2024
+    },
+    {
+        "title": "IT-Огляд",
+        "price": 95.0,
+        "circulation": 8500,
+        "year": 2024
+    },
+    {
+        "title": "Економіст",
+        "price": 150.0,
+        "circulation": 9900,
+        "year": 2024
+    },
+    {
+        "title": "Популярна Фізика",
+        "price": 110.0,
+        "circulation": 10000,
+        "year": 2024
+    },
+    {
+        "title": "Мандрівник",
+        "price": 80.0,
+        "circulation": 5000,
+        "year": 2024
+    }
+]
